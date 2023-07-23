@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor X Pro</title>
+
+    <!-- Css file link  -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+
+    <!-- Fav Icon  -->
+    <link rel="Icon" href="images/logo.png">
+
+    <!-- Bootstrap Links  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Google Fonts Links  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fasthand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agdasima&display=swap" rel="stylesheet">
+
+    <!-- Css Paste  -->
+
+    <!-- font-family: 'Fasthand', cursive; -->
+    <!-- font-family: 'Agdasima', sans-serif;  -->
+
+
+    <!-- Font Awosome Icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+
+<!-- ==================================================================================================== -->
+
+<body>
+
+    <!-- Nav Bar -->
+    <div class="col-lg-12 col-md-12 col-sm-12 nav_right_main">
+
+        <nav class="navbar navbar-expand-lg " style="background-color: rgba(0,0,0,0);padding-top: 0px;">
+            <div class="container-fluid nav_bar_main_container">
+
+                <a class="navbar-brand nav_bar_logo_bar" href="#">
+                    <img src="images/logo.png" alt="logo" class="logo">
+                </a>
+
+                <a class="navbar-brand nav_bar_title_bar" href="#">
+                    <p class="title">Editor X Pro</p>
+                </a>
+                <button class="navbar-toggler All_button_box" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 list_main">
+                        <li class="nav-item" id="nav-btn1">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <p class="home-btn">Home</p>
+                            </a>
+                        </li>
+                        <!-- <li class="nav-item" id="nav-btn">
+                            <a class="nav-link" href="#">
+                                <p class="home-btn">Courses</p>
+                            </a>
+                        </li>
+                        <li class="nav-item" id="nav-btn">
+                            <a class="nav-link" href="#">
+                                <p class="home-btn">Faculty</p>
+                            </a>
+                        </li>
+                        <li class="nav-item" id="nav-btn">
+                            <a class="nav-link" href="#">
+                                <p class="home-btn">Alerts</p>
+                            </a>
+                        </li>
+                        <li class="nav-item" id="nav-btn">
+                            <a class="nav-link" href="#">
+                                <p class="home-btn">About</p>
+                            </a>
+                        </li> -->
+
+                    </ul>
+                    <form class="d-flex search_box" role="search">
+                        <input class="form-control me-2 " id="search_input" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- =========================================================================================== -->
+
+
+
+        <div class="container-fluid mb-5">
+            <div class="row">
+                <div class="col-12">
+                    <!-- ----------------------------  -->
+                    <div class="container main mb-5">
+                        <div class="row">
+                            <div class="col-12 heading">
+                                Image Preview :
+                            </div>
+                        </div>
+
+                        <div class="row mt-2">
+                            <div class="col-12 image_box">
+                                <img src="images/logo.png" id="edit_img" width="200" height="200">
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+
+
+
+                        <hr style="color: white; width: 100%;border-bottom: 2px solid white;">
+                        <div class="row">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-12 col-sm-12 heading">
+                                        Size :
+                                    </div>
+                                    &nbsp;
+                                    <div class="col-lg-3 col-md-12 col-sm-12 mt-1 heading">
+
+                                        <span title="Increment of 10 px" class="plus"
+                                            onclick="plus()"><b>+</b></span>&emsp;<span onclick="minus()"
+                                            title="Decrement of 10 px" class="minus"><b>-</b></span>
+
+                                    </div>
+                                    &emsp;
+                                    <div class="col-lg-5 col-md-12 col-sm-12 mt-1 heading"
+                                        style="justify-content: space-around;display: flex;">
+
+
+                                        <span class="ap-btn2" onclick="s1080()"><b>1080</b></span>
+                                        &nbsp;<span onclick="s720()" class="ap-btn2"><b>720</b></span>
+                                        &nbsp;<span onclick="s480()" class="ap-btn2"><b>480</b></span>
+                                        &nbsp;<span onclick="s360()" class="ap-btn2"><b>360</b></span>
+                                        &nbsp;<span onclick="s11()" class="ap-btn2"><b>1:1</b></span>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                        <hr style="color: white; width: 100%;border-bottom: 2px solid white;">
+                        <div class="row mt-5">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-12 col-sm-12 mt-1 heading">
+                                        Dimensions (px) :
+                                    </div>
+                                    &nbsp;
+                                    <div class="col-lg-6 col-md-12 col-sm-12 mt-1 heading">
+                                        <input placeholder="Height" class="input_field" type="number"
+                                            id="height">&ensp;X&ensp;<input class="input_field" type="number"
+                                            placeholder="Width" id="width">
+
+                                    </div>
+                                    &emsp;
+                                    <div class="col-lg-2 col-md-12 col-sm-12 mt-1 heading">
+                                        <p class="ap-btn" onclick="apply()">Apply</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <br><br>
+                        <hr style="color: white; width: 100%;border-bottom: 2px solid white;">
+                        <div class="row">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-12 col-sm-12 mt-1 heading">
+                                        Brightness Level:
+                                    </div>
+                                    &nbsp;
+                                    <div class="col-lg-2 col-md-12 col-sm-12 mt-1 heading">
+                                        <span class="plus" onclick="Blplus()"><b>+</b></span>&emsp;<span class="minus"
+                                            onclick="Blminus()"><b>-</b></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <br><br>
+                        <hr style="color: white; width: 100%;border-bottom: 2px solid white;">
+                        <div class="row">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-12 col-sm-12 mt-1 heading">
+                                        Contrast Level:
+                                    </div>
+                                    &nbsp;
+                                    <div class="col-lg-2 col-md-12 col-sm-12 mt-1 heading">
+                                        <span class="plus" onclick="Clplus()"><b>+</b></span>&emsp;<span class="minus"
+                                            onclick="Clminus()"><b>-</b></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <br><br>
+                        <hr style="color: white; width: 100%;border-bottom: 2px solid white;">
+                        <div class="row">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-12 col-sm-12 mt-1 heading">
+                                        Black & White :
+                                    </div>
+                                    &nbsp;
+                                    <div class="col-lg-2 col-md-12 col-sm-12 mt-1 heading">
+                                        <span class="plus" onclick="BWplus()"><b>+</b></span>&emsp;<span class="minus"
+                                            onclick="BWminus()"><b>-</b></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <br><br>
+                        <hr style="color: white; width: 100%;border-bottom: 2px solid white;">
+                        <div class="row">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-12 col-sm-12 mt-1 heading">
+                                        Opacity :
+                                    </div>
+                                    &nbsp;
+                                    <div class="col-lg-6 col-md-12 col-sm-12 mt-1 heading">
+                                        <span class="plus" onclick="Oplus()"><b>+</b></span>&emsp;<span class="minus"
+                                            onclick="Ominus()"><b>-</b></span>
+                                    </div>
+                                    &emsp;
+                                    <div class="col-lg-2 col-md-12 col-sm-12 mt-1 heading">
+                                        <!-- <p class="ap-btn">Apply</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <br><br>
+                        <hr style="color: white; width: 100%;border-bottom: 2px solid white;">
+                        <div class="row">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-12 col-sm-12 mt-1 heading">
+                                        Border :
+                                    </div>
+                                    &nbsp;
+                                    <div class="col-lg-2 col-md-12 col-sm-12 mt-1 heading">
+                                        <span class="plus" onclick="Bplus()"><b>+</b></span>&emsp;<span class="minus"
+                                            onclick="Bminus()"><b>-</b></span>
+                                    </div>
+                                    &emsp;
+                                    <div class="col-lg-2 col-md-12 col-sm-12 mt-1 heading">
+                                        Color: <input type="color" id="B-color">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <br><br>
+                        <hr style="color: white; width: 100%;border-bottom: 2px solid white;">
+                        <div class="row">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-12 col-sm-12 mt-1 heading">
+                                        Rounded Corners:
+                                    </div>
+                                    &nbsp;
+                                    <div class="col-lg-2 col-md-12 col-sm-12 mt-1 heading">
+                                        <span class="plus" onclick="Brplus()"><b>+</b></span>&emsp;<span class="minus"
+                                            onclick="Brminus()"><b>-</b></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <hr style="color: white; width: 100%;border-bottom: 2px solid white;">
+
+                        <br><br><br>
+
+                    </div>
+                    <!-- ----------------------------  -->
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Js Links  -->
+
+        <script src="script.js"></script>
+
+</body>
+
+</html>

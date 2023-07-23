@@ -1,0 +1,256 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background: url('images/bg8.jpeg');
+    background-position: fixed;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* =================================================  */
+
+
+
+
+/* ========================   NAV BAR Start   =========================  */
+
+
+.nav_out_main {
+    /* border: 2px solid red; */
+    height: fit-content;
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+
+.nav_left_main {
+    /* border: 2px solid green; */
+    height: 140px;
+    text-align: right;
+
+}
+
+.nav_right_main {
+    /* border: 2px solid blue; */
+    height: fit-content;
+}
+
+/* ----------------------------- */
+.navbar-toggler-icon {
+    /* border: 1px solid brown; */
+    border-radius: 4px;
+    color: brown;
+    background-color: white;
+}
+
+.All_button_box {
+    margin-top: -15px;
+}
+
+.logo {
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-top: -5px;
+}
+
+.logo:hover {
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-top: -5px;
+    /* transform: rotate(360deg); */
+    /* transition: all 3s; */
+}
+
+/* main nav bar out div  */
+.navbar {
+    /* border: 2px solid magenta; */
+    /* border-radius: 30px; */
+    height: fit-content;
+    margin-top: 0px;
+    /* background-color: red; */
+}
+
+.nav_bar_main_container {
+
+    border-bottom: 1px solid white;
+    /* border-radius: 0px; */
+    color: white;
+    height: 50px;
+    background-color: darkblue;
+}
+
+.nav_bar_title_bar {
+    margin-top: 10px;
+    margin-left: 20px;
+    /* border: 2px solid red; */
+    height: fit-content;
+}
+
+.list_main {
+    /* margin-top: 0px; */
+    margin-left: 15x;
+    /* border: 2px solid green; */
+    /* height: 15px; */
+}
+
+.nav-item {
+    height: fit-content;
+    margin-top: 12px;
+
+    padding-top: 0px;
+    padding-bottom: 0px;
+    /* border: 2px solid goldenrod; */
+    border-radius: 3px;
+}
+
+.search_box {
+    /* border:  2px solid yellow; */
+    margin-top: 0px;
+}
+
+/* -------------------------------------  */
+.title {
+    color: cyan;
+    font-size: 30px;
+    font-family: 'Agdasima', sans-serif;
+}
+
+.title:hover {
+    color: white;
+    font-size: 30px;
+    font-family: 'Agdasima', sans-serif;
+}
+
+.home-btn {
+
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 2px 20px;
+    background-color: white;
+    color: darkblue;
+    text-align: center;
+}
+
+/* 
+.home-btn:hover {
+    border-bottom: 3px solid yellow;
+    padding: 5px;
+    color: white;
+} */
+
+/* ========================   NAV BAR END   =========================  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =================================================  */
+@media only screen and (max-width: 1920px) {
+    .logo {
+        height: 30px;
+        border-radius: 50%;
+        margin-right: 20px;
+        margin-top: -10px;
+        transition: all 3s;
+    }
+
+    .logo:hover {
+        height: 30px;
+        border-radius: 50%;
+        margin-right: 20px;
+        margin-top: -10px;
+        transition: all 3s;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .logo {
+        height: 30px;
+        border-radius: 50%;
+        margin-right: 20px;
+        margin-top: -25px;
+        transition: all 3s;
+    }
+
+    .logo:hover {
+        height: 30px;
+        border-radius: 50%;
+        margin-right: 20px;
+        margin-top: -25px;
+        transition: all 3s;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+
+    .nav_bar_title_bar {
+        margin-top: -5px;
+        margin-left: 20px;
+        /* border: 2px solid red; */
+        height: fit-content;
+    }
+
+    .logo {
+        height: 30px;
+        border-radius: 50%;
+        margin-right: 20px;
+        margin-top: -25px;
+        transition: all 3s;
+    }
+
+    .logo:hover {
+        height: 30px;
+        border-radius: 50%;
+        margin-right: 20px;
+        margin-top: -25px;
+        transition: all 3s;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 535px) {}
+
+@media only screen and (max-width: 480px) {
+    .title {
+        color: cyan;
+        font-size: 30px;
+        font-family: 'Agdasima', sans-serif;
+    }
+
+    .nav_bar_title_bar {
+        margin-top: -7px;
+        margin-left: 0px;
+        /* border: 2px solid red; */
+        height: fit-content;
+    }
+}
+
+@media only screen and (max-width: 412px) {
+    .title {
+        color: cyan;
+        font-size: 30px;
+        font-family: 'Agdasima', sans-serif;
+    }
+
+    .nav_bar_title_bar {
+        margin-top: -7px;
+        margin-left: 0px;
+        /* border: 2px solid red; */
+        height: fit-content;
+    }
+}

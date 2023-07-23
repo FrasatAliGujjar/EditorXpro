@@ -1,0 +1,160 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background: url('');
+    background-position: fixed;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* =================================================  */
+.main {
+    /* border:  2px solid blue; */
+    border-radius: 5px;
+    /* background-color: rgba(0, 0, 0, 0.9); */
+    height: 1000px;
+}
+
+.ap-btn {
+
+    border: 2px solid darkblue;
+    border-radius: 20px;
+    padding: 2px 20px;
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    box-shadow: 3px 3px 3px yellow;
+    cursor: pointer;
+}
+
+.ap-btn2 {
+
+    border: 2px solid darkblue;
+    border-radius: 20px;
+    padding: 2px 5px;
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    box-shadow: 3px 3px 3px yellow;
+    cursor: pointer;
+    font-size: 20px;
+
+}
+
+.heading {
+
+    /* border: 2px solid yellow; */
+    height: fit-content;
+    text-align: left;
+    color: white;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow: hidden;
+
+}
+
+.input_field {
+    border-radius: 10px;
+    min-width: 50px;
+    max-width: 200px;
+}
+
+.image_box {
+    border: 2px dashed white;
+    border-radius: 10px;
+    height: 300px;
+    /* width: 100%; */
+    padding: 5px;
+    display: flex;
+    text-align: center;
+    overflow: auto;
+    /* position: fixed; */
+}
+
+.table {
+    border-collapse: collapse;
+    color: white;
+    border: 2px solid red;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+
+#edit_img {
+    margin: auto;
+}
+
+td {
+    color: white;
+    padding: 5px 10px;
+}
+
+.plus {
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px yellow;
+    cursor: pointer;
+}
+
+.minus {
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px yellow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =================================================  */
+@media only screen and (max-width: 1920px) {}
+
+@media only screen and (max-width: 1200px) {}
+
+@media only screen and (max-width: 992px) {}
+
+@media only screen and (max-width: 768px) {
+    .input_field {
+        border-radius: 10px;
+        width: 125px;
+    }
+}
+
+@media only screen and (max-width: 535px) {
+    .input_field {
+        border-radius: 10px;
+        width: 125px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .input_field {
+        border-radius: 10px;
+        width: 125px;
+    }
+}
+
+@media only screen and (max-width: 412px) {
+    .input_field {
+        border-radius: 10px;
+        width: 125px;
+    }
+}
